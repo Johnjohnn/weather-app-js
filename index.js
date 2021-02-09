@@ -1,12 +1,14 @@
 const cityForm = document.querySelector("form");
 const card = document.querySelector(".card");
 const details = document.querySelector(".details");
+const time = document.querySelector("img.time");
+const icon = document.querySelector(".icon-")
 
 const updateUI = (data) => {
     // const cityDets = data.cityDets
     // const weather = data.weather;
     // Destructure properties
-    const { cityDets, weather } = data;
+    const { cityDets, weather } = data;             // easiest way to get properties off an object and store them in a const 
 
     // updates the  details template
     details.innerHTML =`
